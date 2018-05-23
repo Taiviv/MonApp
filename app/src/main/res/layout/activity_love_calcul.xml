@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueSugared"
+    tools:context="com.chartier.virginie.monapp.LoveCalculActivity">
+
+    <ImageView
+        android:id="@+id/coeur_png"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/smiley_love"  />
+
+    <EditText
+        android:id="@+id/prenomf_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textColor="@color/blackLight"
+        android:hint="Prenom Femme" />
+
+    <EditText
+        android:id="@+id/prenomh_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prenomf_txt"
+        android:layout_margin="10dp"
+        android:textColor="@color/blackLight"
+        android:hint="Prenom Homme" />
+
+    <TextView
+        android:id="@+id/resultat_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/calcul_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:text="Calcul"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
